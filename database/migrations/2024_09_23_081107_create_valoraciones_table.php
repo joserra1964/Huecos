@@ -19,7 +19,7 @@ return new class extends Migration
             $table->decimal('cuatroplus',12,2)->default(0);
             $table->decimal('attingenieria',12,2)->default(0);
             $table->decimal('bivobrainstalacion',12,2)->default(0);
-            $table->decimal('nokia',12,2)->default((0);
+            $table->decimal('nokia',12,2)->default(0);
             $table->decimal('equipofuerza',12,2)->default(0);
             $table->decimal('antenas',12,2)->default(0);
             $table->timestamps();
