@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('obras', function (Blueprint $table) {
             $table->id();
             $table->string('codigoObra',12)->nullable();
-            $table->foreignId('emplazamiento_id')->nullable()->constrain('emplazamientos','id');
+            $table->foreignId('emplazamiento_id')->nullable()->constrained('emplazamientos','id');
             $table->foreignId('estado_id')->nullable()->index();
-            $table->foreignId('clave_id')->nullable()->constrain('claves','id');
+            $table->foreignId('clave_id')->nullable()->constrained('claves','id');
             $table->string('lara',6)->nullable();
             $table->string('descripcionObra',50)->nullable();
             $table->string('pp',4)->nullable();

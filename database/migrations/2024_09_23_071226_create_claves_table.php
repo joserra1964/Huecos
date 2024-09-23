@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        Schema::dropIfExists('claves');
         Schema::create('claves', function (Blueprint $table) {
             $table->id();
             $table->string('denominacionclave',15);

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('nokia', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('clave_id')->nullable()->constrain('claves','id');
+            $table->foreignId('clave_id')->nullable()->constrained('claves','id');
             $table->string('codigoproducto',100);
             $table->mediumText('descripcion');
             $table->decimal('importe',12,2)->default(0);
