@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('cabreplanteos', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('obra_id')->nullable()->constrained('obras','id');
+            $table->foreignUuid('obra_id')->constrained();
+            //$table->foreignId('obra_id')->nullable()->constrained('obras','id');
             $table->timestamps();
         });
     }

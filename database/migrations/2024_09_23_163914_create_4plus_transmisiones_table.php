@@ -13,9 +13,11 @@ return new class extends Migration
     {
         Schema::create('4plus_transmisiones', function (Blueprint $table) {
             $table->id();
-            $table->string('codigoObra',12);
-            $table->string('atlasJalones',9);
-            $table->string('atlasVelocidad',25);
+            //$table->foreignId('obra_id')->constrained('obras','id');
+            $table->foreignUuid('obra_id')->constrained();
+            //$table->string('codigo_obra',12);
+            $table->string('atlas_jalones',9);
+            $table->string('atlas_velocidad',25);
             $table->timestamps();
         });
     }

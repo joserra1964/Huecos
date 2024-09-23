@@ -12,8 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('obras', function (Blueprint $table) {
-            $table->id();
-            $table->string('codigoObra',12)->nullable();
+            // $table->id();
+            $table->uuid('id')->primary()->comment('código de obra');
+            //$table->string('codigoObra',12)->nullable();
             $table->foreignId('emplazamiento_id')->nullable()->constrained('emplazamientos','id');
             $table->foreignId('estado_id')->nullable()->index();
      //       $table->foreignId('clave_id')->nullable()->constrained('claves','id');

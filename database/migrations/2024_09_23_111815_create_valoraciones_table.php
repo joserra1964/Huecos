@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('valoraciones', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('obra_id')->constrained('obras','id');
+            $table->foreignUuid('obra_id')->constrained();
+            //$table->foreignId('obra_id')->constrained('obras','id');
             //$table->foreignId('clave_id')->constrained('claves','id');
             $table->decimal('insyte',12,2)->default(0);
             $table->decimal('cuatroplus',12,2)->default(0);
