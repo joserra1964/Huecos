@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('insyte', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('clave_id')->nullable()->constrained('claves','id');
+            //$table->foreignId('clave_id')->nullable()->constrained('claves','id');
             $table->string('administrador',20)->nullable();
             $table->string('codigoproducto',100);
             $table->mediumText('descripcion');

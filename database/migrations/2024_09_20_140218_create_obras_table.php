@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('codigoObra',12)->nullable();
             $table->foreignId('emplazamiento_id')->nullable()->constrained('emplazamientos','id');
             $table->foreignId('estado_id')->nullable()->index();
-            $table->foreignId('clave_id')->nullable()->constrained('claves','id');
+     //       $table->foreignId('clave_id')->nullable()->constrained('claves','id');
             $table->string('lara',6)->nullable();
             $table->string('descripcionObra',50)->nullable();
             $table->string('pp',4)->nullable();
