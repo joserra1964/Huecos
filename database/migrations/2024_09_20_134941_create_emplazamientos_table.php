@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('emplazamientos', function (Blueprint $table) {
             $table->id();
             $table->foreignId('provincia_id')->nullable()->constrained('provincias','id');
-            $table->string('codigoEmplazamiento',5)->nullable();
-            $table->string('denominacionEmplazamiento',45)->nullable();
+            $table->string('codigo_emplazamiento',5)->nullable();
+            $table->string('denominacion_emplazamiento',45)->nullable();
 
             $table->timestamps();
         });
