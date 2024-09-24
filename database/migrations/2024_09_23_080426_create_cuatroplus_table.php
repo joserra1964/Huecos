@@ -19,7 +19,7 @@ return new class extends Migration
             $table->decimal('importe',12,2);
             $table->decimal('unidades',5,2);
             $table->decimal('subtotal',12,2);
-            $table->string('tipoobra',20)->nullable();
+            $table->string('tipo_obra',20)->nullable();
             $table->timestamps();
         });
     }

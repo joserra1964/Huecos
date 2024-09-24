@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('descripcion_obra',50)->nullable();
             $table->string('pp',4)->nullable();
             $table->decimal('importe',8,2)->default(0);
-            $table->string('mainobra',12)->nullable()->index();
+            $table->string('main_obra',12)->nullable()->index();
             $table->timestamps();
         });
     }
