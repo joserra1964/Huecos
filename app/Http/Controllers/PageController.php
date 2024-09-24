@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Obra;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -25,5 +26,8 @@ class PageController extends Controller
     {
         $post = $slug;
         return view('post',['post' => $post]);
+    }
+    public function obras(){
+        return Obra::get();
     }
 }
