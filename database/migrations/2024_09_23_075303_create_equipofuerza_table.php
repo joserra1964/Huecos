@@ -14,14 +14,14 @@ return new class extends Migration
         Schema::create('equipofuerza', function (Blueprint $table) {
             $table->id();
             $table->string('suministrador',45)->nullable();
-            $table->string('codigoproducto',100);
+            $table->string('codigo_producto',100);
             $table->mediumText('descripcion');
             $table->decimal('importe',12,2)->default(0);
             $table->decimal('unidades', 8,2)->default(0);
             $table->boolean('reutilizable')->default(0);
             $table->decimal('subtotal',12,2);
             $table->string('origen',45)->default(0);
-            $table->string('tipoobra',20);
+            $table->string('tipo_obra',20);
             $table->timestamps();
         });
     }

@@ -19,9 +19,9 @@ return new class extends Migration
             $table->decimal('insyte',12,2)->default(0);
             $table->decimal('cuatroplus',12,2)->default(0);
             $table->decimal('attingenieria',12,2)->default(0);
-            $table->decimal('bivobrainstalacion',12,2)->default(0);
+            $table->decimal('biv_obrainstalacion',12,2)->default(0);
             $table->decimal('nokia',12,2)->default(0);
-            $table->decimal('equipofuerza',12,2)->default(0);
+            $table->decimal('equipo_fuerza',12,2)->default(0);
             $table->decimal('antenas',12,2)->default(0);
             $table->decimal('herrajes',12,2)->default(0);
             $table->decimal('subtotal',12,2)->default(0);

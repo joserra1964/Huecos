@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('cuatroplus', function (Blueprint $table) {
             $table->id();
             $table->string('suministrador',20);
-            $table->string('codigoproducto',100);
+            $table->string('codigo_producto',100);
             $table->mediumText('descripcion');
             $table->decimal('importe',12,2);
             $table->decimal('unidades',5,2);

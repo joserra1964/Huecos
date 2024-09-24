@@ -15,7 +15,7 @@ return new class extends Migration
         Schema::dropIfExists('claves');
         Schema::create('claves', function (Blueprint $table) {
             $table->id();
-            $table->string('denominacionclave',15);
+            $table->string('denominacion_clave',15);
             $table->timestamps();
         });
     }

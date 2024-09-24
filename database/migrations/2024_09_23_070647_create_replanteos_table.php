@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('replanteos', function (Blueprint $table) {
             $table->id();
             $table->foreignId('plantilla_id')->nullable();
-            $table->string('codigoproducto',45);
-            $table->string('denominacionproducto',80);
+            $table->string('codigo_producto',45);
+            $table->string('denominacion_producto',80);
             $table->timestamps();
         });
     }

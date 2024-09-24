@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('antenas', function (Blueprint $table) {
             $table->id();
-            $table->string('codigoproducto',100);
+            $table->string('codigo_producto',100);
             $table->mediumText('descripcion');
             $table->decimal('importe',12,2)->default(0);
             $table->decimal('unidades',7,2)->default(0);

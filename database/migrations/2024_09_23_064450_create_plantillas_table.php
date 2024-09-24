@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('plantillas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('cabreplanteo_id')->nullable()->constrained('cabreplanteos','id');
-            $table->string('codigoplantilla',4);
+            $table->string('codigo_plantilla',4);
             $table->mediumText('observaciones')->nullable();
             $table->timestamps();
         });

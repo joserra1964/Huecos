@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignId('estado_id')->nullable()->index();
      //       $table->foreignId('clave_id')->nullable()->constrained('claves','id');
             $table->string('lara',6)->nullable();
-            $table->string('descripcionObra',50)->nullable();
+            $table->string('descripcion_obra',50)->nullable();
             $table->string('pp',4)->nullable();
             $table->decimal('importe',8,2)->default(0);
             $table->string('mainobra',12)->nullable()->index();
