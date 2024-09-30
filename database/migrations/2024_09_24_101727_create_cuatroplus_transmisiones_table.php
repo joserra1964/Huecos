@@ -11,11 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('4plus_transmisiones', function (Blueprint $table) {
+        Schema::create('cuatroplus_transmisiones', function (Blueprint $table) {
             $table->id();
-            //$table->foreignId('obra_id')->constrained('obras','id');
             $table->foreignUuid('obra_id')->constrained();
-            //$table->string('codigo_obra',12);
             $table->string('atlas_jalones',9);
             $table->string('atlas_velocidad',25);
             $table->timestamps();
@@ -27,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('4plus_transmisiones');
+        Schema::dropIfExists('cuatroplus_transmisiones');
     }
 };
